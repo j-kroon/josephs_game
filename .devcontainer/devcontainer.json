@@ -1,0 +1,25 @@
+{
+    "name": "Python 3.10 Dev Container",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "context": ".",
+      "args": {
+        "VARIANT": "3.10-slim"
+      }
+    },
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "python.pythonPath": "/usr/local/bin/python",
+          "editor.formatOnSave": true
+        },
+        "extensions": [
+          "ms-python.python",
+          "ms-azuretools.vscode-docker"
+        ]
+      }
+    },
+    "postCreateCommand": "poetry install",
+    "remoteUser": "root"
+  }
+  
