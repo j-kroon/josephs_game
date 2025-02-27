@@ -1,0 +1,67 @@
+{
+    "locations": [
+      {
+        "id": "location_1",
+        "name": "Haunted Forest",
+        "description": "A dark, eerie forest filled with twisted trees and strange noises.",
+        "items": [
+          {
+            "id": "item_1",
+            "name": "Ancient Sword",
+            "description": "A rusted sword with mysterious engravings.",
+            "interactions": [
+              {
+                "action": "pick up",
+                "result": "You pick up the ancient sword, feeling its weight in your hand."
+              },
+              {
+                "action": "examine",
+                "result": "The sword is old and worn, but the engravings seem to glow faintly."
+              }
+            ]
+          },
+          {
+            "id": "item_2",
+            "name": "Magic Lantern",
+            "description": "A lantern that emits an eerie blue light.",
+            "interactions": [
+              {
+                "action": "pick up",
+                "result": "You pick up the magic lantern, and it illuminates the surroundings."
+              },
+              {
+                "action": "use",
+                "result": "You use the lantern, revealing hidden paths in the forest."
+              }
+            ]
+          }
+        ],
+        "exits": [
+          {
+            "direction": "north",
+            "leads_to": "location_2",
+            "description": "A narrow path leading deeper into the forest."
+          },
+          {
+            "direction": "east",
+            "leads_to": "location_3",
+            "description": "A faint trail leading to an abandoned cabin."
+          }
+        ]
+      },
+      {
+        "id": "location_2",
+        "name": "Dark Cave",
+        "description": "A damp, dark cave with the sound of dripping water echoing through it.",
+        "items": [],
+        "exits": [
+          {
+            "direction": "south",
+            "leads_to": "location_1",
+            "description": "The path back to the haunted forest."
+          }
+        ]
+      }
+    ]
+  }
+  
