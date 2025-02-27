@@ -1,8 +1,8 @@
 {
     "name": "Python 3.10 Dev Container",
     "build": {
-      "dockerfile": "Dockerfile",
-      "context": ".",
+      "dockerfile": "../Dockerfile",
+      "context": "..",
       "args": {
         "VARIANT": "3.10-slim"
       }
