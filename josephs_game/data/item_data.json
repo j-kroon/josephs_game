@@ -1,0 +1,41 @@
+{
+    "items":  [
+        {
+            "id": 1,
+            "name": "Ancient Sword",
+            "description": "A rusted sword with mysterious engravings.",
+            "interactions": [
+            {
+                "action": "pick up",
+                "result": "You pick up the ancient sword, feeling its weight in your hand."
+            },
+            {
+                "action": "examine",
+                "result": "The sword is old and worn, but the engravings seem to glow faintly."
+            }
+            ],
+            "combat_properties": [
+                {
+                    "damage": 10,
+                    "speed": 1
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Magic Lantern",
+            "description": "A lantern that emits an eerie blue light.",
+            "interactions": [
+            {
+                "action": "pick up",
+                "result": "You pick up the magic lantern, and it illuminates the surroundings."
+            },
+            {
+                "action": "use",
+                "result": "You use the lantern, revealing hidden paths in the forest."
+            }
+            ]
+        }
+    
+]
+}
