@@ -5,4 +5,4 @@ def load_data(file_path):
         return json.load(file)
 
 # Load location data
-location_data = load_data('path/to/location_data.json')
+location_data = load_data('./data/location_data.json')
