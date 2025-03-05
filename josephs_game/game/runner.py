@@ -1,11 +1,11 @@
 from josephs_game.game.inventory import Item
 from josephs_game.game.location import Location
-from utils.parser import load_data
+import utils.parser as utils
 from game.player import Player
-class Game:
+class Runner:
     def __init__(self, player_name, data):
         self.player = Player(player_name)
-        self.locations = self.load_data(data)
+        self.locations = utils.load_data(data)
 
     def load_locations(self, data):
         locations = {}

@@ -1,4 +1,4 @@
-from game.game import Game
+from josephs_game.game.runner import Game
 def main():
     print("Welcome to the Adventure Game!")
     location_data = "./josephs_game/data/location_data.json"
